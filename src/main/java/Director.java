@@ -1,7 +1,7 @@
 public class Director extends Employee{
 
-    int numberOfSubordinates;
-    public final double percent = 0.03;
+    private int numberOfSubordinates;
+    final double percent = 0.03;
 
     public Director (String name, double salaryPerDay, int numberOfSubordinates){
         super(name, salaryPerDay);

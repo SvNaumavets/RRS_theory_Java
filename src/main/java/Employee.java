@@ -1,8 +1,8 @@
 public class Employee {
-    String name;
-    String age;
-    String sex;
-    double salaryPerDay;
+    private String name;
+    private String age;
+    private String sex;
+    private double salaryPerDay;
 
     public Employee (String name, double salaryPerDay) {
         this.name = name;
@@ -43,7 +43,7 @@ public class Employee {
     public double getSalary(Month[] monthArray){
         double temp = 0;
         for (int i = 0; i < monthArray.length; i++){
-            temp += salaryPerDay * monthArray[i].workDays;
+            temp += salaryPerDay * monthArray[i].getWorkDays();
         }
         return temp;
     }
