@@ -1,3 +1,5 @@
+package HW10;
+
 public final class Month {
     private final String name;
     private final int valueDays;

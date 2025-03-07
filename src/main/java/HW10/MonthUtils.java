@@ -1,3 +1,5 @@
+package HW10;
+
 public class MonthUtils {
     static Month  january = new Month("January", 31,21);
     static Month february = new Month("February", 31,21);

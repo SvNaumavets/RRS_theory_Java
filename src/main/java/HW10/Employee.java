@@ -1,3 +1,5 @@
+package HW10;
+
 public class Employee {
     private String name;
     private String age;

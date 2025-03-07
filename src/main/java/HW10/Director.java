@@ -1,14 +1,16 @@
-public class Manager extends Employee {
+package HW10;
+
+public class Director extends Employee {
 
     private int numberOfSubordinates;
-    final double percent = 0.01;
+    final double percent = 0.03;
 
-    public Manager (String name, double salaryPerDay, int numberOfSubordinates){
+    public Director (String name, double salaryPerDay, int numberOfSubordinates){
         super(name, salaryPerDay);
         this.numberOfSubordinates = numberOfSubordinates;
     }
 
-    public Manager (String name, String age, String sex, double salaryPerDay, int numberOfSubordinates) {
+    public Director (String name, String age, String sex, double salaryPerDay, int numberOfSubordinates) {
         super(name, age, sex, salaryPerDay);
         this.numberOfSubordinates = numberOfSubordinates;
     }
@@ -24,5 +26,4 @@ public class Manager extends Employee {
     public double getSalary(Month[] monthArray){
         return (1 + percent * numberOfSubordinates) * super.getSalary(monthArray);
     }
-
 }

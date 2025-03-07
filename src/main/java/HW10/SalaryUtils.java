@@ -1,3 +1,5 @@
+package HW10;
+
 public class SalaryUtils {
 
     public static double getTotalSalary(Employee[] employees, Month[] monthArray){
