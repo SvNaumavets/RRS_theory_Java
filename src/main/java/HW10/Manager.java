@@ -1,6 +1,8 @@
+package HW10;
+
 public class Manager extends Employee {
 
-    int numberOfSubordinates;
+    private int numberOfSubordinates;
     final double percent = 0.01;
 
     public Manager (String name, double salaryPerDay, int numberOfSubordinates){
