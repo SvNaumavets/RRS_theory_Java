@@ -13,5 +13,9 @@ abstract class Employee extends User {
         this.employeeId = employeeId;
     }
 
+    public String getEmployeeId() {
+        return employeeId;
+    }
+
     abstract String manageOrders();
 }

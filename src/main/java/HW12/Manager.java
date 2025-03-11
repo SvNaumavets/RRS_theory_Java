@@ -8,12 +8,15 @@ public class Manager extends Employee{
 
     @Override
     String manageOrders() {
-        return null;
+        return "Manager " + super.getEmployeeId() + " manage order";
     }
 
 
     @Override
-    void displayInfo() {
-
+    String displayInfo() {
+        String s = "Manager: " + getEmployeeId() + "\n"
+                + "username: " + getUsername() + "\n"
+                + "email: " + getEmail();
+        return  s;
     }
 }

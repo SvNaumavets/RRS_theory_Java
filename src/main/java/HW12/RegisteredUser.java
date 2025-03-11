@@ -15,5 +15,13 @@ abstract class RegisteredUser extends User {
         this.address = address;
     }
 
+    public String getFullName() {
+        return fullName;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
     abstract String makeOrder();
 }

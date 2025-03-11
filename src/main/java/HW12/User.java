@@ -27,5 +27,5 @@ abstract public class User {
         return email;
     }
 
-    abstract void displayInfo();
+    abstract String displayInfo();
 }

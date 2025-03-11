@@ -8,11 +8,15 @@ public class Customer extends RegisteredUser{
 
     @Override
     String makeOrder() {
-        return null;
+        return "Customer " + super.getFullName() + " place order";
     }
 
     @Override
-    void displayInfo() {
-
+    String displayInfo() {
+        String s = "Customer: " + getFullName() + "\n"
+                + "username: " + getUsername() + "\n"
+                + "address: " + getAddress() + "\n"
+                + "email: " + getEmail();
+        return s;
     }
 }
